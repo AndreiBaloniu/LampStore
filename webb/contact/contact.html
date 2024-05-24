@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Lamp Store</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Lamp Store</h1>
+        <nav>
+            <ul>
+                <li><a href="../index/index.html">Acasă</a></li>
+                <li><a href="../produse/produse.php">Produse</a></li>
+                <li><a href="../despre/despre.html">Despre Noi</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+                <li><a href="../login/login.php">Autentificare</a></li>
+                <li><a href="../register/register.php">Înregistrare</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Pentru orice întrebări sau solicitări, vă rugăm să ne contactați folosind formularul de mai jos sau trimițând un e-mail la adresa: contact@lampstore.com</p>
+            <form action="submit_contact.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Nume:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresă de Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mesaj:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Trimite Mesaj</button>
+            </form>
+        </div>
+    
+        <div class="container employees">
+            <h2>Pentru mai multe informații, căutați angajații:</h2>
+            <div class="employee">
+                <h3>Băloniu Andrei</h3>
+                <p>Senior Lamp Designer</p>
+            </div>
+            <div class="employee">
+                <h3>Ardelean Andrei</h3>
+                <p>Marketing Manager</p>
+            </div>
+            <button class="btn" onclick="showMoreEmployees()" >Vezi mai mult</button>
+            <script src="script.js"></script>
+        </div>
+    </section>
+
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Lamp Store. Toate drepturile rezervate.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+

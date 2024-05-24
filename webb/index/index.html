@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acasă - Lamp Store</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Lamp Store</h1>
+        <nav>
+            <ul>
+                <li><a href="../index/index.html">Acasă</a></li>
+                <li><a href="../produse/produse.php">Produse</a></li>
+                <li><a href="../despre/despre.html">Despre Noi</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+                <li><a href="../login/login.php">Autentificare</a></li>
+                <li><a href="../register/register.php">Înregistrare</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h2>Bine ați venit la Lamp Store!</h2>
+        <p>Descoperiți cea mai recentă colecție de lămpi pentru acasă și birou.</p>
+    </div>
+</section>
+
+<section class="carousel">
+    <div class="container">
+        <h2>Lămpi deosebite pentru fiecare cameră</h2>
+        <div class="carousel-container">
+            <div class="slide" style="background-image: url('../assets/lamp1.jpg');"></div>
+            <div class="slide" style="background-image: url('../assets/lamp2.jpg');"></div>
+            <div class="slide" style="background-image: url('../assets/lamp3.jpg');"></div>
+            <div class="slide" style="background-image: url('../assets/lamp4.jpg');"></div>
+            <div class="slide" style="background-image: url('../assets/lamp5.jpg');"></div>
+            
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        <script src="script.js"></script>
+    </div>
+</section>
+
+
+<section class="popular-products">
+    <div class="container">
+        <h2>Produse populare</h2>
+        <div class="product">
+            <div class="product-info">
+                <img src="../assets/lamp1.jpg" alt="Lampă 1" class="product-img">
+                <div class="product-details">
+                    <h3>Lampă modernă de birou</h3>
+                    <p>Preț: 50 RON</p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-info">
+                <img src="../assets/lamp2.jpg" alt="Lampă 2" class="product-img">
+                <div class="product-details">
+                    <h3>Lampă de podea minimalistă</h3>
+                    <p>Preț: 80 RON</p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-info">
+                <img src="../assets/lamp4.jpg" alt="Lampă 3" class="product-img">
+                <div class="product-details">
+                    <h3>Lampă medie de metal</h3>
+                    <p>Preț: 120 RON</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Lamp Store. Toate drepturile rezervate.</p>
+    </div>
+</footer>
+
+</body>
+</html>

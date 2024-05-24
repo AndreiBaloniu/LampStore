@@ -1,0 +1,363 @@
+/* Resetare CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header {
+    background: linear-gradient(to left, #E5DF7C, #E7EB9D); /* Adăugăm gradientul */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    border: 1px solid transparent; /* Adăugăm un border transparent */
+    padding: 8px 15px; /* Mărim puțin padding-ul */
+    border-radius: 5px; /* Adăugăm border-radius pentru colțuri rotunjite */
+    transition: background-color 0.3s, border-color 0.3s; /* Adăugăm o tranziție pentru culori */
+}
+
+nav ul li a:hover {
+    background-color: #E7EB9D; /* Schimbăm culoarea background-ului */
+    border-color: #B2AF7E; /* Schimbăm culoarea border-ului la hover */
+}
+
+nav ul li a.active {
+    background-color: #FFAF4D; /* Schimbăm culoarea background-ului când suntem pe pagina respectivă */
+    border-color: #FF8C00; /* Schimbăm culoarea border-ului pe pagina respectivă */
+}
+
+/* Stilizare suplimentară pentru pagina de acasă */
+
+.hero {
+    background-color: #f4f4f4;
+    padding: px 0;
+    text-align: center;
+}
+
+.carousel {
+    background-color: #fff;
+    padding: 50px 0;
+    position: relative;
+}
+
+.carousel h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #E3E88C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    z-index: 2;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+
+.popular-products {
+    padding: 50px 0;
+}
+
+.popular-products h2 {
+    margin-bottom: 30px;
+}
+
+.product-info {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.product-img:hover, .product-img:focus {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.product-details {
+    position: absolute;
+    top: 0;
+    left: 120px; /* Așezăm detaliile la dreapta imaginii */
+    background-color: #E3E88C;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    display: block; /* Asigurăm că detaliile sunt vizibile */
+}
+
+.product-details {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    background-color: #E3E88C;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: block;
+    width: 1220px; /* Setăm o lățime fixă pentru a uniformiza dimensiunile chenarelor */
+}
+
+.large-image {
+    width: 100%;
+    height: auto;
+}
+
+.featured {
+    padding: 50px 0;
+}
+
+.featured h2 {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Footer-ul se aliniază automat la partea de jos a paginii */
+}
+
+footer p {
+    margin: 0;
+}
+.contact {
+    margin-bottom: 100px; /* Asigurăm spațiu pentru a vedea întreaga secțiune și footer-ul */
+}
+
+.footer-padding {
+    height: 100px; /* Spațiu pentru footer */
+}
+
+.register,
+.login,
+.products {
+    padding: 50px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #CCC77D
+    ;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #B2AF7E;
+}
+.fixed-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.item-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.item-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.item-details {
+    margin-left: 20px;
+}
+
+.item-title {
+    margin-top: 0;
+}
+
+.item-description {
+    margin-bottom: 5px;
+}
+
+.item-price {
+    font-weight: bold;
+}
+/* Adăugați următoarele stiluri în styles.css */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    cursor: pointer;
+}
+
+th:hover {
+    background-color: #f1f1f1;
+}
+
+#searchInput {
+    margin-bottom: 12px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+ul ul {
+    margin-left: 20px;
+}
+#filterSelect {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+/* Adăugați următoarele stiluri în styles.css */
+
+/* Stiluri pentru fereastra modală */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+

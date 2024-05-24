@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despre Noi - Lamp Store</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script defer src="../script.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Lamp Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index/index.html">Acasă</a></li>
+                    <li><a href="../produse/produse.php">Produse</a></li>
+                    <li><a href="../despre/despre.html">Despre Noi</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                    <li><a href="../login/login.php">Autentificare</a></li>
+                    <li><a href="../register/register.php">Înregistrare</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="about">
+        <div class="container">
+            <h2>Despre Noi</h2>
+            <p>Bine ați venit la Lamp Store, locul unde găsiți cele mai frumoase lămpi pentru acasă și birou. Ne dedicăm să oferim produse de cea mai bună calitate și servicii excelente clienților noștri.</p>
+
+            <!-- Tabelul angajaților -->
+            <h3>Angajații Companiei</h3>
+            <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Căutați angajați..">
+            <script src="../despre/script.js"></script>
+            <table id="employeesTable">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">Nume</th>
+                        <th onclick="sortTable(1)">Poziție</th>
+                        <th onclick="sortTable(2)">Departament</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ion Popescu</td>
+                        <td>Manager</td>
+                        <td>Vânzări</td>
+                    </tr>
+                    <tr>
+                        <td>Maria Ionescu</td>
+                        <td>Asistent</td>
+                        <td>Resurse Umane</td>
+                    </tr>
+                    <!-- Adăugați mai mulți angajați aici -->
+                </tbody>
+            </table>
+
+            <h3>Valorile Companiei</h3>
+            <table>
+                <tr>
+                    <th>Valoare</th>
+                    <th>Descriere</th>
+                </tr>
+                <tr>
+                    <td>Integritate</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Onestitate</td>
+                                <td>Transparență</td>
+                            </tr>
+                            <tr>
+                                <td>Etică</td>
+                                <td>Corectitudine</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Excelență</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Calitate</td>
+                                <td>Performanță</td>
+                            </tr>
+                            <tr>
+                                <td>Inovație</td>
+                                <td>Profesionalism</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Adăugați mai multe valori aici -->
+            </table>
+
+            <!-- Lista cu calitatea produselor și materialelor -->
+            <h3>Calitatea Produselor și Materialelor Noastre</h3>
+            <ul>
+                <li>Produse de înaltă calitate
+                    <ul>
+                        <li>Materiale durabile</li>
+                        <li>Design inovator</li>
+                    </ul>
+                </li>
+                <li>Testare riguroasă
+                    <ul>
+                        <li>Teste de siguranță</li>
+                        <li>Teste de durabilitate</li>
+                    </ul>
+                </li>
+                <!-- Adăugați mai multe elemente ale listei aici -->
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Lamp Store. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

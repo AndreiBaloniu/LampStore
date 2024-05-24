@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produse - Lamp Store</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../products/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Lamp Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index/index.html">Acasă</a></li>
+                    <li><a href="../produse/produse.html" class="current">Produse</a></li>
+                    <li><a href="../despre/despre.html">Despre Noi</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                    <li><a href="../login/login.html">Autentificare</a></li>
+                    <li><a href="../register/register.html">Înregistrare</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="products">
+        <div class="container">
+            <h2>Produse</h2>
+            <!-- Live search -->
+            <input type="text" id="searchInput" placeholder="Caută...">
+            <select id="searchSelect">
+                <option value="Lampă modernă de birou">Lampă modernă de birou</option>
+                <option value="Lampă de podea minimalistă">Lampă de podea minimalistă</option>
+                <option value="Lampă de colț">Lampă de colț</option>
+                <option value="Lampă medie de metal">Lampă medie de metal</option>
+                <option value="Lampă de birou">Lampă de birou</option>
+                <option value="Lampă cu model chinezesc">Lampă cu model chinezesc</option>
+                <option value="Lampă pentru ambient">Lampă pentru ambient</option>
+                <option value="Lampă LED cu lună">Lampă LED cu lună</option>
+                <option value="Lampă de sare Himalaya">Lampă de sare Himalaya</option>
+                <option value="Lampă din marmură">Lampă din marmură</option>
+            </select>
+
+            <!-- Tabel de produse -->
+            <input type="text" id="tableSearch" placeholder="Caută în tabel...">
+            <table id="productTable">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">Nume</th>
+                        <th onclick="sortTable(1)">Preț</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lampă modernă de birou</td>
+                        <td>50 RON</td>
+                    </tr>
+                    <tr>
+                        <td>Lampă de podea minimalistă</td>
+                        <td>80 RON</td>
+                    </tr>
+                    <tr>
+                        <td>Lampă de colț</td>
+                        <td>50 RON</td>
+                    </tr>
+                    <!-- Adaugă restul produselor în tabel -->
+                </tbody>
+            </table>
+        <div class="container">
+            <h2>Produse</h2>
+            <div class="product-list">
+                <!-- Produs 1 -->
+                <div class="product">
+                    <script src="../products/script.js"></script>
+                    <div class="product-info">
+                        <img class="product-img" src="../assets/lamp1.jpg" alt="Product Image">
+                        <div class="product-details">
+                            <h3>Lampă modernă de birou</h3>
+                            <p>Descriere</p>
+                            <p>Preț: $50</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produs 2 -->
+                <div class="product">
+                    <div class="product-info">
+                        <img class="product-img" src="../assets/lamp2.jpg" alt="Product Image">
+                        <div class="product-details">
+                            <h3>Lampă de podea minimalistă</h3>
+                            <p>Descriere</p>
+                            <p>Preț: 80 RON</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produs 3 -->
+                <div class="product">
+                    <div class="product-info">
+                        <img class="product-img" src="../assets/lamp3.jpg" alt="Product Image">
+                        <div class="product-details">
+                            <h3>Lampă de colț</h3>
+                            <p>Descriere</p>
+                            <p>Preț: 50 RON</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produs 4 -->
+                <div class="product">
+                    <div class="product-info">
+                        <img class="product-img" src="../assets/lamp4.jpg" alt="Product Image">
+                        <div class="product-details">
+                            <h3>Lampă medie de metal</h3>
+                            <p>Descriere</p>
+                            <p>Preț: 120 RON</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produs 5 -->
+                <div class="product">
+                    <div class="product-info">
+                        <img class="product-img" src="../assets/lamp5.jpg" alt="Product Image">
+                        <div class="product-details">
+                            <h3>Lampă de birou</h3>
+                            <p>Descriere</p>
+                            <p>Preț: 50 RON</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produs 6 -->
+                <div class="product">
+                    <div class="product-info">
+                        <img class="product-img" src="../assets/lamp6.jpg" alt="Product Image">
+                        <div class="product-details">
+                            <h3>Lampă cu model chinezesc</h3>
+                            <p>Descriere</p>
+                            <p>Preț: 50 RON</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produs 7 -->
+                <div class="product">
+                    <div class="product-info">
+                        <img class="product-img" src="../assets/lamp7.jpg" alt="Product Image">
+                        <div class="product-details">
+                            <h3>Lampă pentru ambient</h3>
+                            <p>Descriere</p>
+                            <p>Preț: 50 RON</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produs 8 -->
+                <div class="product">
+                    <div class="product-info">
+                        <img class="product-img" src="../assets/lamp8.jpg" alt="Product Image">
+                        <div class="product-details">
+                            <h3>Lampă LED cu lună</h3>
+                            <p>Descriere</p>
+                            <p>Preț: 50 RON</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produs 9 -->
+                <div class="product">
+                    <div class="product-info">
+                        <img class="product-img" src="../assets/lamp9.jpg" alt="Product Image">
+                        <div class="product-details">
+                            <h3>Lampă de sare Himalaya</h3>
+                            <p>Descriere</p>
+                            <p>Preț: 50 RON</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produs 10 -->
+                <div class="product">
+                    <div class="product-info">
+                        <img class="product-img" src="../assets/lamp10.jpg" alt="Product Image">
+                        
+                        <div class="product-details">
+                            <h3>Lampă din marmură</h3>
+                            <p>Descriere</p>
+                            <p>Preț: 50 RON</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Lamp Store. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+    
+    <script src="../produse/script.js"></script>
+
+</body>
+</html>
